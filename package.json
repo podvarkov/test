@@ -1,0 +1,13 @@
+{
+  "name": "test-tracker",
+  "version": "1.0.0",
+  "description": "Fundraiseup test task",
+  "main": "index.js",
+  "author": "max <i.snova.bebebe@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1"
+  }
+}
