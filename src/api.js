@@ -48,16 +48,14 @@ app.post(
   }
 )
 
-const API_PORT = process.env.API_PORT || 8001
+const API_PORT = 8001
 
 exports.start = function () {
   console.log('Connecting to database...')
-  db.connect()
-    .then(() => {
-      console.log('Database connected, starting api server... ')
-      app.listen(API_PORT, () => {
-        console.log(`Api server is listening on ${API_PORT}...`)
-      })
+  db.connect().then(() => {
+    console.log('Database connected, starting api server... ')
+    app.listen(API_PORT, () => {
+      console.log(`Api server is listening on ${API_PORT}...`)
     })
-    .catch(console.error)
+  })
 }

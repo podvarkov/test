@@ -8,10 +8,9 @@ yarn install || npm i
 ### Run 
 - Set process variables
 - Run server with `npm run start` or `yarn start`
+- Open your browser at http://localhost:8000
 
 ### Variables
 | name                      | type   | default |
 |---------------------------|--------|---------|
-| STATIC_PORT               | Number | 8000    |
-| API_PORT                  | Number | 8001    |
 | MONGODB_CONNECTION_STRING | String | -       |
